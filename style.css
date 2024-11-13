@@ -265,7 +265,7 @@ footer {
     #333;
     color: white;
 }
-/* Responsive Styles */
+
 @media screen and (min-width: 500px){
     .hamburger{
         display: block;
