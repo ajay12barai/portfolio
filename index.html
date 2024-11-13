@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <div class="navbar">
+            <img class="logo" src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <ul class="menu_item">
+                <li class="link"> <a href="#"> HOME</a></li>
+                <li class="link"> <a href="#"> PROJECT</a></li>
+                <li class="link"> <a href="#">CEO NAME </a></li>
+                <li class="link"><a href="#">ABOUT</a></li>
+                <li class="link"><a href="#">Contact</a></li>
+
+            </ul>
+            <button class="phone-button">Download cv</button>
+            <div class="hamburger" onclick="togglemenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        
+        <!-- hamburger menu -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <ul class="menu_items">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <button class="phone-button">+977 9811590684</button>
+            </ul>
+        </div>
+        <!-- Hero Section -->
+                <header class="hero">
+                    <div class="hero-text">
+                        <h1>Welcome to My Portfolio</h1>
+                        <p>Explore my projects and get to know me!</p>
+                    </div>
+                </header>
+   
+   
+        <section class="about-me" id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="about-heading"> About</h2>
+                    <p class="about-paragraph"><em>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+                        vestibulum.
+                        Sed quis lectus eu metus tincidunt scelerisque. Integer vehicula eros sit amet quam
+                        condimentum
+                        varius.<br /><br /> Phasellus varius dolor ac velit laoreet, sed malesuada lacus
+                        scelerisque. Donec a
+                        condimentum elit. Fusce vitae lacus ante. Sed a tempor magna. Aliquam erat volutpat. Nulla
+                        facilisi. Integer in quam in urna dignissim malesuada. Nunc ultricies, nunc at dictum
+                        gravida,
+                        erat ante vehicula felis, non tincidunt nisi metus eget odio. Etiam id libero dui. Sed ut
+                        nibh
+                        vehicula, cursus nulla ut, tincidunt nunc. Maecenas lacinia blandit elit, in lacinia arcu
+                        dapibus
+                        sit amet.<br /><br /> Cras sed risus vel lacus sodales convallis. Ut lacinia augue felis, a
+                        feugiat mi
+                        consectetur eu. Nullam et urna eu elit egestas interdum. Proin sodales, lorem vitae
+                        fringilla
+                        pellentesque, lectus libero malesuada nisl, ut faucibus mi urna id sapien.
+                    </em>
+                    </p>
+                </div>    
+                    <div class="about-image">
+                        <img src="./public/img/ajay.jpg">
+                        <img src="images.jpeg">
+                    </div>  
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-categories">
+            <button onclick="filterPortfolio('web-design')" class="active">Web Design</button>
+            <button onclick="filterPortfolio('graphic-design')">Graphics Design</button>
+            <button onclick="filterPortfolio('mobile-apps')">Mobile Apps</button>
+            </div>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item web-design">
+                    <img src="web1.jpg" alt="Portfolio Item 1">
+                    <p>WEB DESIGN PROJECT 1</p>
+                </div>
+                <div class="portfolio-item web-design">
+                    <img src="istockphoto-1067747804-612x612.jpg" alt="Portfolio Item 2">
+                    <p>Web Design Project 2</p>
+                </div>
+                <div class="portfolio-item web-design">
+                    <img src="download (1).jpeg" alt="Portfolio Item 3">
+                    <p>Web Design Project 3</p>
+                </div>
+                <div class="portfolio-item graphic-design">
+                    <img src="product-jpeg-500x500.jpg" alt="Portfolio Item 1">
+                    <p>Graphic-design 1</p>
+                </div>
+                <div class="portfolio-item graphic-design">
+                    <img src="download (2).jpeg" alt="Portfolio Item 5">
+                    <p>Graphic Design Project 2</p>
+                </div>
+                <div class="portfolio-item graphic-design">
+                    <img src="images (1).jpeg" alt="Portfolio Item 6">
+                    <p>Graphic Design Project 3</p>
+                </div>
+                <div class="portfolio-item mobile-apps">
+                    <img src="pngtree-d-rendering-of-a-3d-android-phone-with-app-icons-on-picture-image_2711792 (1).jpg" alt="Portfolio Item 1">
+                    <p>mobiles Apps 1</p>
+                </div> 
+                <div class="portfolio-item mobile-apps">
+                    <img src="download (3).jpeg" alt="Portfolio Item 8">
+                    <p>Mobile App Project 2</p>
+                </div>
+                <div class="portfolio-item mobile-apps">
+                    <img src="download (4).jpeg" alt="Portfolio Item 9">
+                    <p>Mobile App Project 3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT us section -->
+        <section class="contact-section">
+            <h2> Contact Me</h2>
+            <div class="contact-container">
+            <div class="contact-info">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li><strong>Address:</strong> Siddharthnagar-7 Bhairahawa, Rupandehi</li>
+                    <li><strong> Email</strong> Portfolio@gmail.com</li>
+                    <li><strong>Phone</strong> +977 9811590684</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <form>
+                <div class="form-group">
+                    <input type="text"   id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email"   id="Email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message"   name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div>
+                <button type="submit" class="form-group-1">Send Message</button>
+                </div>
+                </form>
+            </div>
+        </div>
+        </section>
+
+    </div>
+    <script>
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.portfolio-categories button');
+
+            items.forEach(item => {
+                if (item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            document.querySelector(`[onclick="filterPortfolio('${category}')"]`).classList.add('active');
+        }
+
+        function toggleMenu() {
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            hamburgerMenu.classList.toggle('active');
+        }
+
+
+        window.onload = function () {
+            filterPortfolio('web-design');
+        }
+    </script>
+    
+</body>
+</html>
